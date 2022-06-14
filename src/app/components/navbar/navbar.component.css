@@ -1,0 +1,12 @@
+:host ::ng-deep .p-menubar {
+  padding: 0.5rem;
+  background: #ef5350;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+}
+
+:host ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+  color: white;
+}
+

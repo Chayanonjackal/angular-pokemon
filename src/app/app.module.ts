@@ -4,13 +4,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//primeNG
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {MenuItem} from 'primeng/api';                  //api
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ButtonModule} from 'primeng/button';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import {MenubarModule} from 'primeng/menubar';
+//HttpClient
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    MenubarModule,
+    BrowserAnimationsModule,
+    AccordionModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
