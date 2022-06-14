@@ -10,3 +10,15 @@
   color: white;
 }
 
+.imgStyle{
+ width: 10%;
+ height: 10%;
+ /* display: flex;
+ justify-content: flex-end; */
+}
+
+:host ::ng-deep .p-menubar-end {
+ display: flex;
+ justify-content: flex-end;
+ padding-right: 1rem;
+}

@@ -12,6 +12,8 @@ import {ButtonModule} from 'primeng/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import {MenubarModule} from 'primeng/menubar';
+import {TableModule} from 'primeng/table';
+import {InputTextModule} from 'primeng/inputtext';
 //HttpClient
 import { HttpClientModule } from '@angular/common/http';
 
@@ -28,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     MenubarModule,
     BrowserAnimationsModule,
     AccordionModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule,
+    InputTextModule
 
   ],
   providers: [],

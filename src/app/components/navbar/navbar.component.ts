@@ -14,19 +14,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-          label: 'Pages',
-          items: [
-              {label: 'Open'},
-              {label: 'Quit'}
-          ]
-      },
-      {
-          label: 'Nothing',
-          icon: 'pi pi-fw pi-pencil',
-          items: [
-              {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-              {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-          ]
+          label: 'Pokemon List!',
+          icon: 'pi pi-thumbs-up',
       }
   ];
   }

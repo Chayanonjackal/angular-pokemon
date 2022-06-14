@@ -1,2 +1,21 @@
 <app-navbar></app-navbar>
+<br>
+<input #valueLimit type="text" pInputText value="" placeholder="InsertNumber"/>
+<p-button label="Click" (onClick)="searchLimitPokemon(valueLimit.value)"  ></p-button>
+
+
+<p-table [value]="pokemonFecth" >
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Name</th>
+          <th>Picture</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-pakemon >
+      <tr>
+        <td>{{pakemon.name}}</td>
+        <td> <img [src]="pakemon.url" alt="PokemonPicture"></td>
+      </tr>
+  </ng-template>
+</p-table>
 
